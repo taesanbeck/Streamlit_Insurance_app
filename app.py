@@ -155,7 +155,7 @@ st.sidebar.markdown('''##### People pay too much for healthcare in america.
 ##### Decreasing Primary, Preventative, and Prescription (PPP) care costs for all Americans through a split pricing schema dependent on age, bmi, and smoker status for companies like GoForward.com.''')
 
 st.sidebar.markdown('## Sources')
-source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction:</p>'
+source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction</p>'
 st.sidebar.markdown(source_title, unsafe_allow_html= True)
 source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://goforward.com/</p>'
 st.sidebar.markdown(source_title, unsafe_allow_html= True)
