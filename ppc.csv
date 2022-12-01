@@ -1,0 +1,5 @@
+﻿Category,Price,smoker Multiplier,BMI Multiplier <25,BMI 26-35,BMI 36+
+18 or Younger,$65/month,x 2.5%,1,1.25%,1.50%
+19-35,$90/month,x 2.5%,1,1.25%,1.50%
+36-50,$85/month,x 2.5%,1,1.25%,1.50%
+51+,$85/Month,x 2.5%,1,1.25%,1.50%
