@@ -178,10 +178,18 @@ st.altair_chart(km.cluster2)
 
 st.markdown('''## Descriptive Statistics''')
 
-st.pyplot(m.age_smoker_bar)
-st.pyplot(m.smoker_age_box)
-st.pyplot(m.smoker_bmi_box)
-st.pyplot(m.smoker_expense_box)
+
+
+
+dataset = pd.read_csv("refined_insurance.csv")
+age_smoker_bar = sns.barplot(x="BMI Category", y="age", hue="smoker", data=dataset, palette="Blues")
+plt.show
+st.pyplot(age_smoker_bar)
+
+
+# st.pyplot(m.smoker_age_box)
+# st.pyplot(m.smoker_bmi_box)
+# st.pyplot(m.smoker_expense_box)
 
 
 
