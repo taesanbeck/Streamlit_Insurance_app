@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 import kmeans as km
 import app_k as k
+import mona as m
 
 source = pd.read_csv('./refined_insurance.csv')
 source2 = pd.read_csv('./refined_insurance_2.csv')
@@ -169,8 +170,10 @@ st.altair_chart(km.cluster1)
 st.altair_chart(km.cluster2)
 
 
-# st.image('./Insurance_PCA.jpeg')
-
+st.pyplot(m.age_smoker_bar)
+st.pyplot(m.smoker_age_box)
+st.pyplot(m.smoker_bmi_box)
+st.pyplot(m.smoker_expense_box)
 
 
 
