@@ -185,7 +185,12 @@ col2.header("Box Plot (BMI to AGE)")
 col2.image('./mona2.JPG', use_column_width=True)
 
 
+col3, col4 = st.columns(2)
 
+col3.header("Bar Chart (BMI to AGE)")
+col3.image('./mona3.JPG', use_column_width=True)
+col4.header("Box Plot (BMI to AGE)")
+col4.image('./mona4.JPG', use_column_width=True)
 
 
 
