@@ -176,6 +176,7 @@ the right orange depicts those who would financially benifit from our proposed p
 
 st.altair_chart(km.cluster2)
 
+st.markdown('''## Descriptive Statistics''')
 
 st.pyplot(m.age_smoker_bar)
 st.pyplot(m.smoker_age_box)
