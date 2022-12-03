@@ -180,6 +180,8 @@ st.markdown('''## Descriptive Statistics''')
 
 st.pyplot(m.fig)
 
+st.pyplot(m.fig2)
+
 
 
 
