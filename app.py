@@ -178,7 +178,11 @@ st.markdown('''## Descriptive Statistics''')
 
 st.image("./mona1.JPG")
 
+col1, col2 = st.columns(2)
 
+col1.header("Bar Chart")
+col1.image('./mona1.JPG', use_column_width=True)
+col2.image('./mona2.JPG', use_column_width=True)
 
 
 
