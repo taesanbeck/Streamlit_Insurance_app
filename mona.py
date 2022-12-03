@@ -2,13 +2,14 @@ import pandas as pd
 import numpy as np
 import matplotlib.pyplot as plt
 import seaborn as sns
+import altair as alt
 
 dataset = pd.read_csv("refined_insurance.csv")
 
 dataset.head()
 
 
-fig, (ax, ax1) = plt.subplot()
+fig, (ax, ax1,ax2,ax3) = plt.subplot()
 sns.barplot(
     x="BMI Category", 
     y="age", hue="smoker", 
@@ -18,8 +19,6 @@ sns.boxplot(
     x="smoker", 
     y="age", data=dataset, palette="Blues",ax=ax1)
 
-
-fig2, (ax2, ax3) = plt.subplot()
 sns.boxplot(
     x="smoker", 
     y="bmi", 
