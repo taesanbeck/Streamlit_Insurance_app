@@ -163,7 +163,7 @@ st.sidebar.markdown(source_title, unsafe_allow_html= True)
 source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://goforward.com/</p>'
 st.sidebar.markdown(source_title, unsafe_allow_html= True)
 
-st.markdown('## PCA and Kmeans Clustering')
+st.markdown('## Kmeans Clustering')
 
 
 st.altair_chart(km.cluster1)
