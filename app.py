@@ -5,6 +5,8 @@ import streamlit as st
 import kmeans as km
 import app_k as k
 import mona as m
+import matplotlib.pyplot as plt
+import seaborn as sns
 
 source = pd.read_csv('./refined_insurance.csv')
 source2 = pd.read_csv('./refined_insurance_2.csv')
