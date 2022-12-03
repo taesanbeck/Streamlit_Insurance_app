@@ -178,7 +178,7 @@ st.altair_chart(km.cluster2)
 
 st.markdown('''## Descriptive Statistics''')
 
-st.pyplot(m.d_bar)
+st.image("mona1.jpg")
 
 
 
