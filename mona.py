@@ -5,6 +5,8 @@ import seaborn as sns
 
 dataset = pd.read_csv("refined_insurance.csv")
 
+dataset.head()
+
 age_smoker_bar = sns.barplot(x="BMI Category", y="age", hue="smoker", data=dataset, palette="Blues")
 plt.show
 
