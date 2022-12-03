@@ -8,7 +8,7 @@ dataset = pd.read_csv("refined_insurance.csv")
 dataset.head()
 
 
-fig, ax = plt.subplots()
+fig, dataset = plt.subplots()
 sns.barplot(
     x="BMI Category", 
     y="age", hue="smoker", 
