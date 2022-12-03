@@ -4,7 +4,7 @@ import pandas as pd
 import streamlit as st
 import kmeans as km
 import app_k as k
-# import mona as m
+import mona as m
 # import matplotlib.pyplot as plt
 # import seaborn as sns
 
@@ -178,7 +178,7 @@ st.altair_chart(km.cluster2)
 
 st.markdown('''## Descriptive Statistics''')
 
-# st.pyplot(m.fig)
+st.pyplot(m.d_bar)
 
 
 
