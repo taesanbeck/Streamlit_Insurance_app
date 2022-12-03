@@ -166,7 +166,7 @@ st.sidebar.markdown(source_title, unsafe_allow_html= True)
 st.markdown('''## Kmeans Clustering (3 Groups identified)
 The Cluster models below compare age and bmi to healthcare costs. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
 would account for those sick or potentially soon to be cronically ill (light blue), the last group with the highest bills seems to identify cronically ill people with the 
-highests expenses.''')
+highests expenses (dark blue).''')
 
 st.altair_chart(km.cluster1)
 
