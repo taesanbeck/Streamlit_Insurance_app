@@ -163,11 +163,16 @@ st.sidebar.markdown(source_title, unsafe_allow_html= True)
 source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://goforward.com/</p>'
 st.sidebar.markdown(source_title, unsafe_allow_html= True)
 
-st.markdown('## Kmeans Clustering')
-
+st.markdown('''## Kmeans Clustering (3 Groups identified)
+The Cluster models below compare age and bmi to healthcare costs. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
+would account for those sick or potentially soon to be cronically ill (light blue), the last group with the highest bills seems to identify cronically ill people with the 
+highests expenses.''')
 
 st.altair_chart(km.cluster1)
 
+st.markdown('''## Kmeans Clustering(identify where smokers fit in the groups, and who benifits from new price)
+The Cluster below show the age group from above with two separate color encodings, one the left is showing smokers in orange and on
+the right orange depicts those who would financially benifit from our proposed price for Forward-like PPP care.''')
 
 st.altair_chart(km.cluster2)
 
