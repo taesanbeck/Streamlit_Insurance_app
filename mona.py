@@ -7,13 +7,16 @@ dataset = pd.read_csv("refined_insurance.csv")
 
 dataset.head()
 
-age_smoker_bar = sns.barplot(x="BMI Category", y="age", hue="smoker", data=dataset, palette="Blues")
-age_smoker_bar.savefig(age_smoker_bar)
 
-smoker_age_box = sns.boxplot(x="smoker", y="age", data=dataset, palette="Blues")
+fig, ax = plt.subplots()
 
-
-smoker_bmi_box = sns.boxplot(x="smoker", y="bmi", data=dataset, palette="Blues")
+sns.barplot(x="BMI Category", y="age", hue="smoker", data=dataset, palette="Blues")
 
 
-smoker_expense_box = sns.boxplot(x="smoker", y="Total 2022 PPP expenses", data=dataset, palette="Blues")
+sns.boxplot(x="smoker", y="age", data=dataset, palette="Blues")
+
+
+sns.boxplot(x="smoker", y="bmi", data=dataset, palette="Blues")
+
+
+sns.boxplot(x="smoker", y="Total 2022 PPP expenses", data=dataset, palette="Blues")

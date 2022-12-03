@@ -178,10 +178,8 @@ st.altair_chart(km.cluster2)
 
 st.markdown('''## Descriptive Statistics''')
 
-st.pyplot(m.age_smoker_bar)
-st.pyplot(m.smoker_age_box)
-st.pyplot(m.smoker_bmi_box)
-st.pyplot(m.smoker_expense_box)
+st.pyplot(m.fig)
+
 
 
 
