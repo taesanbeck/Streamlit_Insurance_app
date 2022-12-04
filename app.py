@@ -159,7 +159,11 @@ st.sidebar.markdown('## Sources')
 
 st.sidebar.markdown('[Kaggle insurance data](https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction)', unsafe_allow_html=True)
 st.sidebar.markdown('[GoForward](https://goforward.com)', unsafe_allow_html=True)
-
+st.sidebar.markdown('[AVG Health insurance Costs](https://www.valuepenguin.com/average-cost-of-health-insurance#premiums)')
+st.sidebar.markdown('[Health Insurance Coverage of the Total Population](https://www.kff.org/other/state-indicator/health-insurance-coverage-of-the-total-population-cps/?currentTimeframe=0&sortModel=%7B%22colId%22:%22Location%22,%22sort%22:%22asc%22%7D)')
+st.sidebar.markdown('[Commercial insurances VS Medicare](https://www.cbo.gov/publication/57422)')
+st.sidebar.markdown('[Health system Tracker](https://www.healthsystemtracker.org/chart-collection/u-s-spending-healthcare-changed-time/)')
+st.sidebar.markdown('[Investopedia- 6 Reason\'s US Healthcare is so Expensive](https://www.investopedia.com/articles/personal-finance/080615/6-reasons-healthcare-so-expensive-us.asp)')
 
 st.markdown('''## Kmeans Clustering (3 Groups identified)
 The Cluster models below compare age and bmi to healthcare costs. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
