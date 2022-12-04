@@ -156,10 +156,10 @@ st.sidebar.markdown('''##### People pay too much for healthcare in america.
 ##### Decreasing Primary, Preventative, and Prescription (PPP) care costs for all Americans through a split pricing schema dependent on age, bmi, and smoker status for companies like GoForward.com.''')
 
 st.sidebar.markdown('## Sources')
-source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction</p>'
-st.sidebar.markdown(source_title, unsafe_allow_html= True)
-source_title = '<p style="font-family:sans-serif; color:LightBlue; font-size: 14px;">https://goforward.com/</p>'
-st.sidebar.markdown(source_title, unsafe_allow_html= True)
+
+st.sidebar.markdown('[Kaggle insurance data](https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction)', unsafe_allow_html=True)
+st.sidebar.markdown('[GoForward](https://goforward.com)', unsafe_allow_html=True)
+
 
 st.markdown('''## Kmeans Clustering (3 Groups identified)
 The Cluster models below compare age and bmi to healthcare costs. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
@@ -174,7 +174,7 @@ the right orange depicts those who would financially benifit from our proposed p
 
 st.altair_chart(km.cluster2)
 
-st.markdown('''## Descriptive Statistics''')
+st.markdown('''## Descriptive Statistics (Monali)''')
 
 
 col1, col2 = st.columns(2)
