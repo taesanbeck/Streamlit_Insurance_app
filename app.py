@@ -155,6 +155,7 @@ st.sidebar.markdown('''##### People pay too much for healthcare in america.
 ##### This project aims to propose government tax breaks for insurance free medical provider networks.
 ##### Decreasing Primary, Preventative, and Prescription (PPP) care costs for all Americans through a split pricing schema dependent on age, bmi, and smoker status for companies like GoForward.com.''')
 
+st.sidebar.markdown('[GitHub Repo](https://github.com/taesanbeck/streamlit_insurance_app)', unsafe_allow_html=True)
 st.sidebar.markdown('## Sources')
 
 st.sidebar.markdown('[Kaggle insurance data](https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction)', unsafe_allow_html=True)
@@ -164,6 +165,11 @@ st.sidebar.markdown('[Health Insurance Coverage of the Total Population](https:/
 st.sidebar.markdown('[Commercial insurances VS Medicare](https://www.cbo.gov/publication/57422)')
 st.sidebar.markdown('[Health system Tracker](https://www.healthsystemtracker.org/chart-collection/u-s-spending-healthcare-changed-time/)')
 st.sidebar.markdown('[Investopedia- 6 Reason\'s US Healthcare is so Expensive](https://www.investopedia.com/articles/personal-finance/080615/6-reasons-healthcare-so-expensive-us.asp)')
+st.sidebar.markdown('[CALIFORNIA Health Care Almanac](https://www.chcf.org/wp-content/uploads/2019/05/HealthCareCostsAlmanac2019.pdf)')
+st.sidebar.markdown('[CPI Inflation Calculator](https://www.bls.gov/data/inflation_calculator.htm)')
+st.sidebar.markdown('[NHE Fact Sheet](https://www.bls.gov/data/inflation_calculator.htm)')
+
+
 
 st.markdown('''## Kmeans Clustering (3 Groups identified)
 The Cluster models below compare age and bmi to healthcare costs. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
