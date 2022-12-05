@@ -238,9 +238,10 @@ st.sidebar.markdown('[NHE Fact Sheet](https://www.bls.gov/data/inflation_calcula
 
 
 st.markdown('''## Kmeans Clustering (3 Groups identified)
-The Cluster models below compare age and bmi to healthcare costs. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
+The Cluster models below compare age and bmi to healthcare costs using the Sklearn python library. The three groups identified are likely Healthy (at the bottom in white), midgrade health group which
 would account for those sick or potentially soon to be cronically ill (light blue), the last group with the highest bills seems to identify cronically ill people with the 
-highests expenses (dark blue).''')
+highests expenses (dark blue). Our focus with our proposed pricing would be everyone, but mostly the middle health group because
+theoretically the more preventative care is applied to this group, the less cronically ill people we should have.''')
 
 st.altair_chart(km.cluster1)
 
