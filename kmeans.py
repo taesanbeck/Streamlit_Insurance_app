@@ -41,7 +41,8 @@ cluster1 = cluster_age | cluster_bmi
 smoker_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
     x='age',
     y='Total 2022 PPP expenses',
-    color= alt.Color("smoker", type="nominal",scale=alt.Scale(range=['#012bbf', '#00b10e']),legend=alt.Legend(columns=2)),
+    color= alt.Color("smoker", type="nominal",scale=alt.Scale(range=['#012bbf', '#00b10e']),
+    legend=alt.Legend(columns=2),legend=alt.Legend(title="smoker",orient="top", direction='horizontal',titleAnchor='middle')),
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
 ).properties(width=500,height=500).interactive()
 
@@ -49,7 +50,8 @@ smoker_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
 benifit_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
     x='age',
     y='Total 2022 PPP expenses',
-    color= alt.Color("Benefit from Proposed Price Yes/No", type="nominal",scale=alt.Scale(range=['#ac1008', '#00b10e']),legend=alt.Legend(columns=2)),
+    color= alt.Color("Benefit from Proposed Price Yes/No", type="nominal",scale=alt.Scale(range=['#ac1008', '#00b10e']),
+    legend=alt.Legend(columns=2),legend=alt.Legend(title="smoker",orient="top", direction='horizontal',titleAnchor='middle')),
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
 ).properties(width=500,height=500).interactive()
 
