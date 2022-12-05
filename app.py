@@ -93,6 +93,13 @@ Background:
 
 ''')
 
+st.markdown('''## Source Data Overview''')
+
+
+
+st.markdown('''## Exploratory Visualization''')
+
+
 st.markdown('''
 ## Proposal
 
@@ -181,24 +188,6 @@ The Cluster below show the age group from above with two separate color encoding
 the right orange depicts those who would financially benifit from our proposed price for Forward-like PPP care.''')
 
 st.altair_chart(km.cluster2)
-
-st.markdown('''## Descriptive Statistics (Monali)''')
-
-
-col1, col2 = st.columns(2)
-
-col1.header("Bar Chart (BMI to AGE)")
-col1.image('./mona1.JPG', use_column_width=True)
-col2.header("Box Plot (BMI to AGE)")
-col2.image('./mona2.JPG', use_column_width=True)
-
-
-col3, col4 = st.columns(2)
-
-col3.header("Box Plot (Smoker to BMI)")
-col3.image('./mona3.JPG', use_column_width=True)
-col4.header("Box Plot (Smoker to Expenses)")
-col4.image('./mona4.JPG', use_column_width=True)
 
 
 
