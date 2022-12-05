@@ -10,8 +10,6 @@ source = pd.read_csv('./refined_insurance.csv')
 source2 = pd.read_csv('./refined_insurance_2.csv')
 source3 = pd.read_csv('./refined_insurance_3.csv')
 
-
-
 source = pd.read_csv('./refined_insurance.csv')
 
 input_dropdown = alt.binding_select(options=[True,False,[True&False]], name='Smoker')
@@ -83,7 +81,7 @@ new_title = '<p style="font-family:sans-serif; color:Green; font-size: 42px;">TE
 st.markdown(new_title, unsafe_allow_html=True)
 
 st.markdown('''
-## Problem Statement
+## Problem tatement
 
 US healthcare lacks a preventative approach and costs are rising.
 
