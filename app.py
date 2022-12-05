@@ -245,17 +245,6 @@ highests expenses (dark blue).''')
 st.altair_chart(km.cluster1)
 
 
-
-''' wide mode by default is coming but not complete yet
-below is what is being proposed on github....but this doesn't exist yet
-#st.set_page_config(  # Alternate names: setup_page, page, layout
-	layout="wide",  # Can be "centered" or "wide". In the future also "dashboard", etc.
-	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
-	page_title=None,  # String or None. Strings get appended with "• Streamlit". 
-	page_icon=None,  # String, anything supported by st.image, or None.
-)'''
-
-
 st.markdown('''## QUESTION????
 If the US government gave tax breaks to insurance-company-free
 provider network startups like GoForward.com and companies like
