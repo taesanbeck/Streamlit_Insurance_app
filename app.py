@@ -217,8 +217,8 @@ st.sidebar.markdown('''##### People pay too much for healthcare in america.
 ##### Decreasing Primary, Preventative, and Prescription (PPP) care costs for all Americans through a split pricing schema dependent on age, bmi, and smoker status for companies like GoForward.com.''')
 
 st.sidebar.markdown('[GitHub Repo](https://github.com/taesanbeck/streamlit_insurance_app)', unsafe_allow_html=True)
-st.sidebar.markdown('#[Click Here to Take the SURVEY](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
-st.sidebar.markdown('#[Click Here to view RESPONSES](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
+st.sidebar.markdown('[SURVEY](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
+st.sidebar.markdown('[RESPONSES](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
 
 
 
