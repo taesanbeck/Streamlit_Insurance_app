@@ -123,7 +123,7 @@ with col2:
    st.altair_chart(dp.age_box)
    st.altair_chart(dp.bmi_box)
 with col3:
-   st.altair_chart(dp.aage_bar_rule)
+   st.altair_chart(dp.age_bar_rule)
 
    
   
