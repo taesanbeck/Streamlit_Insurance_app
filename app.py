@@ -110,7 +110,11 @@ st.markdown('''
 Our team obtained data on 1300+ individuals that have incurred healthcare charges in the year 2023. This dataset included characteristics such as Age, BMI, Smoking Status, # of steps a day,
 region, and total charges incurred. We conducted the following data preprocessing/analysis to enable further understanding of how we may leverage this data towards solving our problem.
 
+Here is a snippit of what our final, preprocessed dataset looks like:
+
 ''')
+
+st.dataframe(source.head())
 
 st.markdown('''## Exploratory Visualization''')
 
