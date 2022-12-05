@@ -134,7 +134,19 @@ st.markdown('''
 The clusters below show the age group from above with two separate color encodings, one the left is showing smokers in orange and on
 the right orange depicts those who would financially benefit from our proposed price for Forward-like PPP care.''')
 
-st.altair_chart(km.cluster2)
+
+col1, col2 = st.columns(2)
+
+with col1:
+    st.altair_chart(km.smoker_cluster2)
+with col2:
+    st.altair_chart(km.benifit_cluster2)
+
+
+
+
+
+
 
 st.markdown('''
 ## Proposal
