@@ -49,7 +49,7 @@ smoker_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
 benifit_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
     x='age',
     y='Total 2022 PPP expenses',
-    color=alt.Color(alt.value('green'), alt.Color('Benefit from Proposed Price Yes/No')),
+    color=alt.Color('Benefit from Proposed Price Yes/No', alt.value('green')),
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
 ).properties(width=500,height=500).interactive()
 
