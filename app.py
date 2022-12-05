@@ -217,6 +217,11 @@ st.sidebar.markdown('''##### People pay too much for healthcare in america.
 ##### Decreasing Primary, Preventative, and Prescription (PPP) care costs for all Americans through a split pricing schema dependent on age, bmi, and smoker status for companies like GoForward.com.''')
 
 st.sidebar.markdown('[GitHub Repo](https://github.com/taesanbeck/streamlit_insurance_app)', unsafe_allow_html=True)
+st.sidebar.markdown('#[Click Here to Take the SURVEY](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
+st.sidebar.markdown('#[Click Here to view RESPONSES](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
+
+
+
 st.sidebar.markdown('## Sources')
 
 st.sidebar.markdown('[Kaggle insurance data](https://www.kaggle.com/datasets/annetxu/health-insurance-cost-prediction)', unsafe_allow_html=True)
@@ -242,6 +247,7 @@ st.altair_chart(km.cluster1)
 
 
 ''' wide mode by default is coming but not complete yet
+below is what is being proposed on github....but this doesn't exist yet
 #st.set_page_config(  # Alternate names: setup_page, page, layout
 	layout="wide",  # Can be "centered" or "wide". In the future also "dashboard", etc.
 	initial_sidebar_state="auto",  # Can be "auto", "expanded", "collapsed"
@@ -250,7 +256,13 @@ st.altair_chart(km.cluster1)
 )'''
 
 
-st.set_page_config(layout="wide")
+st.markdown('''## QUESTION????
+If the US government gave tax breaks to insurance-company-free
+provider network startups like GoForward.com and companies like
+GoForward provided you with PPP care for less than you are
+paying now (Using our proposed pricing model), would you drop the PPP portion of your current insurance
+plan and Switch to PPP care through a Company like GoForward???''')
 
+st.markdown('[Click Here to Take the SURVEY](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
 
-
+st.markdown('[Click Here to view RESPONSES](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
