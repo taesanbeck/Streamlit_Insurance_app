@@ -218,7 +218,7 @@ st.sidebar.markdown('''##### People pay too much for healthcare in america.
 
 st.sidebar.markdown('[GitHub Repo](https://github.com/taesanbeck/streamlit_insurance_app)', unsafe_allow_html=True)
 st.sidebar.markdown('[SURVEY](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
-st.sidebar.markdown('[RESPONSES](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
+
 
 
 
@@ -254,4 +254,3 @@ plan and Switch to PPP care through a Company like GoForward???''')
 
 st.markdown('[Click Here to Take the SURVEY](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
 
-st.markdown('[Click Here to view RESPONSES](https://docs.google.com/forms/d/e/1FAIpQLSeCeXZHGjF9hDoJmI7CB6tXAWamLhhfR0N3mBky6CHFDCTAGg/viewform?usp=sf_link)')
