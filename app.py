@@ -125,7 +125,7 @@ p_c = pd.read_csv('ppc.csv')
 st.table(p_c)
 
 st.markdown('''
-# Benefit Analysis
+### Benefit Analysis
 ''')
 st.altair_chart(k.Benefit_by_age)
 st.altair_chart(k.ben_age_bmi)
