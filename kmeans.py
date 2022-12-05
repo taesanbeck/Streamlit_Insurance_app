@@ -41,7 +41,7 @@ cluster1 = cluster_age | cluster_bmi
 smoker_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
     x='age',
     y='Total 2022 PPP expenses',
-    color= alt.Color("smoker", type="nominal",scale=alt.Scale(range=['#012bbf', ' #ac1008']),legend=alt.Legend(columns=2)),
+    color= "smoker",
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
 ).properties(width=500,height=500).interactive()
 
