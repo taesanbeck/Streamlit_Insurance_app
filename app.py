@@ -125,9 +125,9 @@ with col2:
 with col3:
     st.altair_chart(dp.exp_by_type)
 
-st.markdown('''## Kmeans Clustering(identify where smokers fit in the groups, and who benifits from new price)
-The Cluster below show the age group from above with two separate color encodings, one the left is showing smokers in orange and on
-the right orange depicts those who would financially benifit from our proposed price for Forward-like PPP care.''')
+st.markdown('''
+The clusters below show the age group from above with two separate color encodings, one the left is showing smokers in orange and on
+the right orange depicts those who would financially benefit from our proposed price for Forward-like PPP care.''')
 
 st.altair_chart(km.cluster2)
 
