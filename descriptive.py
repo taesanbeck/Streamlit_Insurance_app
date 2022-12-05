@@ -37,7 +37,7 @@ age_box = alt.Chart(df).mark_boxplot(extent='min-max').encode(
 ### boxplot by bmi category
 
 bmi_box = alt.Chart(df).mark_boxplot(extent='min-max').encode(
-    x='BMI Category',
+    x=alt.X('BMI Category:O', sort= '<25,26-35,36+')
     y='Total 2022 PPP expenses:Q',
     tooltip=alt.Tooltip('Total 2022 PPP expenses', format='.2f')
 ).interactive().properties(width=400,height=300).configure_axis(
