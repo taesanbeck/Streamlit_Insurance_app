@@ -246,7 +246,7 @@ theoretically the more preventative care is applied to this group, the less cron
 st.altair_chart(km.cluster1)
 
 
-st.markdown('''## QUESTION????
+st.markdown('''## QUESTIONS????
 If the US government gave tax breaks to insurance-company-free
 provider network startups like GoForward.com and companies like
 GoForward provided you with PPP care for less than you are
