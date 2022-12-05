@@ -56,7 +56,7 @@ rule = alt.Chart(df).mark_rule(color='red').encode(
     y=alt.Y('Forward PPP expenses:Q',axis=alt.Axis(title=None))
 )
 
-age_bar_rule = (age_bar + rule).properties(width=500,height=300).configure_axis(
+age_bar_rule = (age_bar + rule).properties(width=300,height=300).configure_axis(
     grid=False, labelFontSize=20, titleFontSize = 20
 ).configure_legend(labelFontSize = 15,titleFontSize=15)
 ############################################################# Khalid's STUFF ##################
