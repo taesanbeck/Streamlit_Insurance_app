@@ -114,7 +114,7 @@ Here is a snippit of what our final, preprocessed dataset looks like:
 
 ''')
 
-st.dataframe(source.head())
+st.dataframe(source.reset_index().head())
 
 st.markdown('''## Exploratory Visualization''')
 
