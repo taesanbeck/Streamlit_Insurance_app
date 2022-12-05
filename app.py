@@ -117,7 +117,7 @@ st.markdown('''## Exploratory Visualization''')
 st.markdown('''
 ## Proposal
 
-See chart for proposed pricing schema to replace GoForwards current \\$149/month. Proposed price is ~\\$1,701 on Average Per Capita and would be paid through income tax deduction in liu of current PPP insurance plan:
+See chart for proposed pricing schema to replace GoForwards current \\$149/month. Proposed price is ~\\$142 on average and would be paid on a monthly basis in lieu of incurring a separate PPP insurance plan:
 
 ''')
 p_c = pd.read_csv('ppc.csv')
@@ -125,7 +125,7 @@ p_c = pd.read_csv('ppc.csv')
 st.table(p_c)
 
 st.markdown('''
-### Benefit Analysis
+## Benefit Analysis
 ''')
 st.altair_chart(k.Benefit_by_age)
 st.altair_chart(k.ben_age_bmi)
