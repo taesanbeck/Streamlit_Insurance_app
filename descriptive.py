@@ -60,6 +60,23 @@ rule = alt.Chart(df).mark_rule(color='red').encode(
 age_bar_rule = (age_bar + rule).properties(width=400,height=300).configure_axis(
     grid=False, labelFontSize=20, titleFontSize = 20
 ).configure_legend(labelFontSize = 15,titleFontSize=15)
+
+df2 = df[['Age Category','Primary Care expenses 2022','Prescription expenses 2022','Preventative care expenses 2022']]
+df3 = pd.melt(df2,id_vars=['Age Category'],value_vars=list(df2.columns[1:]),var_name='Expense Type',value_name='Expense').groupby(['Age Category','Expense Type']).mean().reset_index()
+
+df3['Expense Type'] = df3['Expense Type'].replace({'Prescription expenses 2022':'Prescription','Preventative care expenses 2022':'Preventative','Primary Care expenses 2022':'Primary Care'})
+
+exp_by_type = alt.Chart(df3).mark_bar().encode(
+    x = 'Age Category',
+    y = 'Expense:Q',
+    color= alt.Color("Expense Type",scale=alt.Scale(scheme='tableau20'),legend=alt.Legend(title="Expense Type",orient="top",
+         direction='horizontal',
+         titleAnchor='middle')),
+    tooltip=alt.Tooltip('Expense', format='.0f')
+).properties(width=400,height=300).configure_axis(
+    grid=False, labelFontSize=20, titleFontSize = 20
+).configure_legend(labelFontSize = 15,titleFontSize=15)
+
 ############################################################# Khalid's STUFF ##################
 
 ### AGE ################################### BECK'S STUFF #####################################
@@ -119,3 +136,4 @@ BMI_hist
 bmi_box
 
 age_bar_rule
+exp_by_type

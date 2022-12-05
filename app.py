@@ -114,7 +114,7 @@ region, and total charges incurred. We conducted the following data preprocessin
 
 st.markdown('''## Exploratory Visualization''')
 
-col1, col2 = st.columns(2)
+col1, col2,col3 = st.columns(3)
 
 with col1:
    st.altair_chart(dp.age_hist)
@@ -122,10 +122,8 @@ with col1:
 with col2:
    st.altair_chart(dp.age_bar_rule)
    st.altair_chart(dp.bmi_box)
-
-
-   
-  
+with col3:
+    st.altair_chart(dp.exp_by_type)
 
 st.markdown('''
 ## Proposal
