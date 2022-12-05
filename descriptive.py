@@ -73,7 +73,7 @@ exp_by_type = alt.Chart(df3).mark_bar().encode(
          direction='horizontal',
          titleAnchor='middle')),
     tooltip=alt.Tooltip('Expense', format='.0f')
-).properties(width=400,height=800).configure_axis(
+).properties(width=400,height=600).configure_axis(
     grid=False, labelFontSize=20, titleFontSize = 20
 ).configure_legend(labelFontSize = 15,titleFontSize=15)
 
