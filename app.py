@@ -11,7 +11,7 @@ source = pd.read_csv('./refined_insurance.csv')
 source2 = pd.read_csv('./refined_insurance_2.csv')
 source3 = pd.read_csv('./refined_insurance_3.csv')
 
-source = pd.read_csv('./refined_insurance.csv')
+source = source.iloc[:,1:]
 
 input_dropdown = alt.binding_select(options=[True,False,[True&False]], name='Smoker')
 selection = alt.selection_single(fields=['smoker'], bind=input_dropdown)
