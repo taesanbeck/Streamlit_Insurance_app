@@ -113,8 +113,9 @@ region, and total charges incurred. We conducted the following data preprocessin
 Here is a snippit of what our final, preprocessed dataset looks like:
 
 ''')
+dataset = source[['Age Category','BMI Category','smoker','region','Total 2022 PPP expenses','Forward PPP expenses','proposed_price','Benefit from Proposed Price Yes/No']]
 
-st.dataframe(source.reset_index(drop=True).head())
+st.dataframe(dataset.reset_index(drop=True).head())
 
 st.markdown('''## Exploratory Visualization''')
 
