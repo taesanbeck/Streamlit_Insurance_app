@@ -5,6 +5,43 @@ import altair as alt
 df = pd.read_csv("./refined_insurance.csv")
 
 
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 ### AGE
 bar_age = alt.Chart(df).mark_bar(color='lightblue').encode(
     x= 'age:Q',
