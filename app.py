@@ -87,7 +87,7 @@ st.markdown('''
 US healthcare lacks a preventative approach and costs are rising.
 
 Background: 
-1. Currently Americans spend \\~$2,437 on average per capita on Primary, Preventative, and Prescription(PPP) care and GoForward.com provides PPP care for only \\$1788 annually per capita. 
+1. Currently Americans spend approximately \\$2,437 on average per capita on Primary, Preventative, and Prescription(PPP) care and GoForward.com provides PPP care for only \\$1788 annually per capita. 
 2. Currently GoForwards \\$1,788 is an additional subscription based fee on top of regular insurance fees.
 3. Goforward presents a solution that does not tailor to individual circumstances so we wanted to propose a pricing methodology that would decrease individual PPP expenses, and increase revenue for companies like GoForward through government tax breaks and category based pricing.
 4. Our proposed pricing methodology improves PPP accessibility for people by decreasing rates for younger, lower BMI, and non-smokers and many would pay less than forwards 149/month model
