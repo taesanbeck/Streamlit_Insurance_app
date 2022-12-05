@@ -32,7 +32,8 @@ age_box = alt.Chart(df).mark_boxplot(extent='min-max').encode(
     tooltip=alt.Tooltip('Total 2022 PPP expenses', format='.2f')
 ).interactive().properties(width=400,height=300).configure_axis(
     grid=False, labelFontSize=20, titleFontSize = 20
-).configure_legend(labelFontSize = 15,titleFontSize=15)
+).configure_legend(labelFontSize = 15,titleFontSize=15).configure_axisX(
+    title = "Cell Type Percentages")
 
 ### boxplot by bmi category
 
