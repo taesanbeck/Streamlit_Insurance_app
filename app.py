@@ -4,6 +4,7 @@ import pandas as pd
 import streamlit as st
 import kmeans as km
 import app_k as k
+import descriptive as dp
 
 
 source = pd.read_csv('./refined_insurance.csv')
@@ -113,6 +114,14 @@ region, and total charges incurred. We conducted the following data preprocessin
 
 st.markdown('''## Exploratory Visualization''')
 
+col1, col2, col3 = st.columns(3)
+
+with col1:
+   st.altair_chart(dp.bar_age)
+
+with col2:
+   st.header("A dog")
+   st.image("https://static.streamlit.io/examples/dog.jpg")
 
 st.markdown('''
 ## Proposal
