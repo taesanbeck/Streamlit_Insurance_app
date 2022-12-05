@@ -46,7 +46,7 @@ smoker_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
     legend=alt.Legend(title="Smoker",orient="top",
     direction='horizontal',titleAnchor='middle')),
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
-).properties(width=700,height=500).interactive()
+).properties(width=600,height=500).interactive()
 
 #### Cluster by those who Benifit from the Pricing BENIFIT CHART ###
 benifit_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
@@ -58,5 +58,5 @@ benifit_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
      legend=alt.Legend(title="Benefit",orient="top",
     direction='horizontal',titleAnchor='middle')),
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
-).properties(width=700,height=500).interactive()
+).properties(width=600,height=500).interactive()
 
