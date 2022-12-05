@@ -95,7 +95,7 @@ Background:
 
 st.markdown('''
 ## Bottom Line Up-Front
-Through rigorous data analysis, our team proposes a business model that builds on that of a private company, GoForward, which provides preventative healthcare services, with enhanced pricing that tailors to individual nuances
+After conducting rigorous data analysis, our team looks to propose a business model that builds on that of a private company, GoForward, which provides preventative healthcare services, with enhanced pricing that tailors to individual nuances
 and ensures all parties involved stand to benefit - private businesses, government, and, most importantly, our people. Our solution primarily aims to further disintermediate preventative healthcare services by removing insurance companies from the equation.
 
 The GoForward model is predicated on the buildout of establishments that have all the resources necessary to provide preventative healthcare services. With a monthly subscription model, patients may access those facilities, and all services provided, at any time and at no additional cost.
