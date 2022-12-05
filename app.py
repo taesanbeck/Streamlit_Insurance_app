@@ -132,7 +132,7 @@ See chart for proposed pricing schema to replace GoForwards current \\$149/month
 ''')
 p_c = pd.read_csv('ppc.csv')
 
-st.table(p_c)
+st.image('./proposed_pricing_chart.jpg')
 
 st.markdown('''
 Ordered by importance top-down:
