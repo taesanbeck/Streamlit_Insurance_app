@@ -117,17 +117,28 @@ st.markdown('''## Exploratory Visualization''')
 st.markdown('''
 ## Proposal
 
-See chart for proposed pricing schema to replace GoForwards current \\$149/month. Proposed price is ~\\$142 on average and would be paid on a monthly basis in lieu of incurring a separate PPP insurance plan:
-
+See chart for proposed pricing schema to replace GoForwards current \\$149/month. Proposed price is ~\\$142 on average and would be paid on a monthly basis in lieu of incurring a separate PPP insurance plan. While an average, people would pay different rates and in accordance with the below chart.
 ''')
 p_c = pd.read_csv('ppc.csv')
 
 st.table(p_c)
 
 st.markdown('''
+Ordered by importance top-down:
+1. Age - a base rate is applied based on a given person's age category (there are four in total).
+2. Given the age base rate, a multiplier is added based on current BMI levels (accounted for on a monthly basis).
+3. Given 1 & 2 above, an 2.5 multiplier is added if the given person is a smoker. 
+
+The chart below succinctly shows that this proposed pricing scheme results in benefits across all age categories.
+
+''')
+
+st.altair_chart(k.Benefit_by_age)
+
+st.markdown('''
 ## Benefit Analysis
 ''')
-st.altair_chart(k.Benefit_by_age)
+
 st.altair_chart(k.ben_age_bmi)
 
 
