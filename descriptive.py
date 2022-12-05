@@ -100,15 +100,15 @@ box_PPP_exp = alt.Chart(df).mark_boxplot().encode(
 ################################################# BECK's STUFF #############################################################3
 
 ### BECK's CHARTS
-bar_age 
+#bar_age 
 #box_age_region
 
-bar_bmi 
+#bar_bmi 
 #box_bmi_region
 
 #bar_smoker 
-age_bar # Kahlid's is better I needed pairs of 2
-box_PPP_exp
+ # Kahlid's is better I needed pairs of 2
+b#ox_PPP_exp
 
 ### Khalid's CHART's
 age_hist
@@ -117,4 +117,4 @@ BMI_hist
 age_box
 bmi_box
 
-#age_bar
+age_bar
