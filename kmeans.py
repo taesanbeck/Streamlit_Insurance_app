@@ -54,4 +54,5 @@ benifit_cluster2 = alt.Chart(df).mark_circle(size=60).encode(
     tooltip=['age', 'bmi', 'region', 'smoker','Benefit from Proposed Price Yes/No','proposed_price','CLUSTERS']
 ).properties(width=500,height=500).interactive()
 
-cluster2 = smoker_cluster2 | benifit_cluster2
+smoker_cluster2
+benifit_cluster2
