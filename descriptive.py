@@ -4,42 +4,59 @@ import altair as alt
 
 df = pd.read_csv("./refined_insurance.csv")
 
+### histograms by age 
+
+age_hist = alt.Chart(df).mark_bar().encode(
+    x='age:Q',
+    y='count():Q'
+).properties(width=400,height=300).configure_axis(
+    grid=False, labelFontSize=20, titleFontSize = 20
+).configure_legend(labelFontSize = 15,titleFontSize=15)
+
+### histograms by bmi
+
+BMI_hist = alt.Chart(df).mark_bar().encode(
+    x='bmi:Q',
+    y='count():Q'
+).properties(width=400,height=300).configure_axis(
+    grid=False, labelFontSize=20, titleFontSize = 20
+).configure_legend(labelFontSize = 15,titleFontSize=15)
+
+### boxplot by age category
+
+age_box = alt.Chart(df).mark_boxplot(extent='min-max').encode(
+    x='Age Category',
+    y='Total 2022 PPP expenses:Q',
+    tooltip=alt.Tooltip('Total 2022 PPP expenses', format='.2f')
+).interactive().properties(width=400,height=300).configure_axis(
+    grid=False, labelFontSize=20, titleFontSize = 20
+).configure_legend(labelFontSize = 15,titleFontSize=15)
+
+### boxplot by bmi category
+
+bmi_box = alt.Chart(df).mark_boxplot(extent='min-max').encode(
+    x='BMI Category',
+    y='Total 2022 PPP expenses:Q',
+    tooltip=alt.Tooltip('Total 2022 PPP expenses', format='.2f')
+).interactive().properties(width=400,height=300).configure_axis(
+    grid=False, labelFontSize=20, titleFontSize = 20
+).configure_legend(labelFontSize = 15,titleFontSize=15)
 
 
+### bar graph
+age_bar = alt.Chart(df).mark_bar().encode(
+    x='age:Q',
+    y='Total 2022 PPP expenses:Q',
+    tooltip = alt.Tooltip('Total 2022 PPP expenses:Q', format='.2f')
+)
 
+rule = alt.Chart(df).mark_rule(color='red').encode(
+    y=alt.Y('Forward PPP expenses:Q',axis=alt.Axis(title=None))
+)
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+(age_bar + rule).properties(width=500,height=300).configure_axis(
+    grid=False, labelFontSize=20, titleFontSize = 20
+).configure_legend(labelFontSize = 15,titleFontSize=15)
 
 
 ### AGE
