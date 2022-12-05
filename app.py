@@ -124,13 +124,10 @@ p_c = pd.read_csv('ppc.csv')
 
 st.table(p_c)
 
+st.markdown('''
+# Benefit Analysis
+''')
 st.altair_chart(k.Benefit_by_age)
-
-# Forward_title = '<p style="font-family:sans-serif; color:White; font-size: 18px;">Forward\'s $1,788 annual price (see below chart) is not cost effective per capita as an additional subscription expense and reduces opportunity to increase Forwards Revenue with government sponsored tax breaks </p>'
-# st.markdown(Forward_title, unsafe_allow_html=True)
-
-
-
 st.altair_chart(k.ben_age_bmi)
 
 
