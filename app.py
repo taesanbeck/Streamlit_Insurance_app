@@ -95,7 +95,8 @@ Background:
 
 st.markdown('''
 ## Bottom Line Up-Front
-
+Through rigorous data analysis, our team proposes a business model that builds on that of a private company, GoForward, which provides preventative healthcare services, with enhanced pricing that tailors to individual nuances
+and ensures all parties involved stand to benefit - private businesses, government, and, most importantly, our people.  
 ''')
 
 st.markdown('''## Source Data Overview''')
