@@ -250,7 +250,7 @@ st.altair_chart(km.cluster1)
 )'''
 
 
-
+st.set_page_config(layout="wide")
 
 
 
