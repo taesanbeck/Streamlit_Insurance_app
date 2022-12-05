@@ -131,8 +131,8 @@ with col3:
     st.altair_chart(dp.exp_by_type)
 
 st.markdown('''
-The clusters below show the age group from above with two separate color encodings, one the left is showing smokers in orange and on
-the right orange depicts those who would financially benefit from our proposed price for Forward-like PPP care.''')
+The scatter plots below show the age groups and their expenses with two separate color encodings, the one on left is showing smokers(red) VS non-smokers(blue) and on
+the right depicts those who would financially benefit from our proposed price VS those that currently would not.''')
 
 
 col1, col2 = st.columns(2)
