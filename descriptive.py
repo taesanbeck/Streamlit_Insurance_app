@@ -4,6 +4,8 @@ import altair as alt
 
 df = pd.read_csv("./refined_insurance.csv")
 
+
+################################################################### Khalid's STUFF #########################################
 ### histograms by age 
 
 age_hist = alt.Chart(df).mark_bar().encode(
@@ -57,9 +59,9 @@ rule = alt.Chart(df).mark_rule(color='red').encode(
 (age_bar + rule).properties(width=500,height=300).configure_axis(
     grid=False, labelFontSize=20, titleFontSize = 20
 ).configure_legend(labelFontSize = 15,titleFontSize=15)
+############################################################# Khalid's STUFF ##################
 
-
-### AGE
+### AGE ################################### BECK'S STUFF #####################################
 bar_age = alt.Chart(df).mark_bar(color='lightblue').encode(
     x= 'age:Q',
     y= 'count():Q',
@@ -83,22 +85,36 @@ box_bmi_region = alt.Chart(df).mark_boxplot().encode(
     y='bmi:Q',
 ).properties(width = 400).interactive()
 
-### Smoker
-bar_smoker = alt.Chart(df).mark_bar(color='lightblue').encode(
-    x= 'smoker:N',
-    y= 'count():Q',
-    tooltip= alt.Tooltip(['smoker:N']),
-).properties(width = 400).interactive()
+# ### Smoker
+# bar_smoker = alt.Chart(df).mark_bar(color='lightblue').encode(
+#     x= 'smoker:N',
+#     y= 'count():Q',
+#     tooltip= alt.Tooltip(['smoker:N']),
+# ).properties(width = 400).interactive()
 
 
 box_PPP_exp = alt.Chart(df).mark_boxplot().encode(
     x='region:N',
     y='Total 2022 PPP expenses:Q',
 ).properties(width = 400).interactive()
+################################################# BECK's STUFF #############################################################3
 
+### BECK's CHARTS
 bar_age 
-box_age_region
+#box_age_region
+
 bar_bmi 
-box_bmi_region
-bar_smoker 
+#box_bmi_region
+
+#bar_smoker 
+age_bar # Kahlid's is better I needed pairs of 2
 box_PPP_exp
+
+### Khalid's CHART's
+age_hist
+BMI_hist
+
+age_box
+bmi_box
+
+#age_bar

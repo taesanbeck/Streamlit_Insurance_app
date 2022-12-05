@@ -114,14 +114,20 @@ region, and total charges incurred. We conducted the following data preprocessin
 
 st.markdown('''## Exploratory Visualization''')
 
-col1, col2, col3 = st.columns(3)
+col1, col2, col3, col4 = st.columns(4)
 
 with col1:
    st.altair_chart(dp.bar_age)
-
+   st.altair_chart(dp.bar_bmi)
 with col2:
-   st.header("A dog")
-   st.image("https://static.streamlit.io/examples/dog.jpg")
+   st.altair_chart(dp.age_bar)
+   st.altair_chart(dp.box_PPP_exp)
+with col2:
+   st.altair_chart(dp.age_hist)
+   st.altair_chart(dp.BMI_hist)
+with col2:
+   st.altair_chart(dp.age_box)
+   st.altair_chart(dp.bmi_box)
 
 st.markdown('''
 ## Proposal
